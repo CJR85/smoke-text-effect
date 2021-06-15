@@ -1,6 +1,6 @@
 // Split text into letters
 const text = document.querySelector('.text');
-text.innerHTML = text.textContent.replace(/\$/g, '<span>$&</span>');
+text.innerHTML = text.textContent.replace(/\S/g, '<span>$&</span>');
 
 // Add active class on hovered <span> tag
 const letters = document.querySelectorAll('span');
